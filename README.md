@@ -89,3 +89,11 @@ en la carpeta android/app/src/main/AndroidManifest.xml se copia estas lineas, la
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 ```
+
+## Step 5: Instalación de zustand
+se debe instalar los permisos, por que si no la aplicacion no los puede usar
+
+```sh
+npm i zustand
+
+```
