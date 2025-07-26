@@ -35,3 +35,40 @@ project.ext.vectoricons = [
 
 apply from: file("../../node_modules/react-native-vector-icons/fonts.gradle");
 ```
+
+## Paso 3: Stack navigator
+
+se instala el stack
+```sh
+npm install @react-navigation/stack
+npm install react-native-gesture-handler
+npm install @react-native-masked-view/masked-view
+```
+se importan en el punto mas alto de aplicación app
+ ```sh
+import 'react-native-gesture-handler';
+```
+se pone en la parte mas alta de la aplicación app
+```sh
+<NavigationContainer>
+```
+se crea archivo creat navigator.
+
+## Step 4: Instalación de los fundamento de react-navigation
+-- [**React Navigation**](https://reactnavigation.org/) --
+
+```sh
+npm install @react-navigation/native
+npm install react-native-screens react-native-safe-area-context
+```
+
+en la carpeta MainActivity.kt se copia estas lineas
+```sh
+override fun onCreate(savedInstanceState: Bundle?) {
+    super.onCreate(null)
+    }
+```
+debe importar este paquete
+```sh
+import android.os.Bundle;
+```
