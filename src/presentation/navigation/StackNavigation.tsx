@@ -24,7 +24,7 @@ export const StackNavigation =() =>  {
             },
         }}>
         <Stack.Screen name="LoadingScreen" component={LoadingScreen} />
-        <Stack.Screen name="MapScreen" component={MapScreent} />
+        <Stack.Screen name="MapScreent" component={MapScreent} />
         <Stack.Screen name="PermissionsScreen" component={PermissionsScreen} />
         </Stack.Navigator>
     );
