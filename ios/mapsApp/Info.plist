@@ -25,6 +25,19 @@
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSAppTransportSecurity</key>
+
+
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>Necesito su ubicación para mostrar el mapa</string>
+	<key>NSLocationTemporaryUsageDescriptionDictionary</key>
+	<dict>
+		<key>YOUR-PURPOSE-KEY</key>
+		<string>Necesito su ubicación para mostrar el mapa</string>
+	</dict>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Necesito su ubicación para mostrar el mapa</string>
+
+
 	<dict>
 	  <!-- Do not change NSAllowsArbitraryLoads to true, or you will risk app rejection! -->
 		<key>NSAllowsArbitraryLoads</key>
