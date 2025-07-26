@@ -71,4 +71,21 @@ override fun onCreate(savedInstanceState: Bundle?) {
 debe importar este paquete
 ```sh
 import android.os.Bundle;
+
+```
+## Step 5: Instalación de permisos
+se debe instalar los permisos, por que si no la aplicacion no los puede usar
+
+-- [**react-native-permissions**](https://www.npmjs.com/package/react-native-permissions) --
+
+```sh
+npm i react-native-permissions
+
+```
+
+en la carpeta android/app/src/main/AndroidManifest.xml se copia estas lineas, las que se necesita perdir los permisos, si se necesita mas permisos, copia las demas
+```sh
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 ```
