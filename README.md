@@ -114,3 +114,20 @@ en la carpeta android/app/src/main/AndroidManifest.xml se copia estas lineas, la
      android:name="com.google.android.geo.API_KEY"
      android:value="AIzaSyAxihmCOcLvvKV96-tqBMx40a1VzflN3k0"/>
 ```
+
+## Step 6: Instalación de react-native-geolocation
+se debe instalar react-native-geolocation
+
+-- [**react-native-geolocation**](https://github.com/michalchudziak/react-native-geolocation) --
+
+```sh
+npm install @react-native-community/geolocation --save
+
+```
+
+en la carpeta android/app/src/main/AndroidManifest.xml se copia estas lineas, las que se necesita para google maps
+```sh
+   <meta-data
+     android:name="com.google.android.geo.API_KEY"
+     android:value="AIzaSyAxihmCOcLvvKV96-tqBMx40a1VzflN3k0"/>
+```
