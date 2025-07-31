@@ -97,3 +97,20 @@ se debe instalar los permisos, por que si no la aplicacion no los puede usar
 npm i zustand
 
 ```
+
+## Step 5: Instalación de react-native-maps
+se debe instalar react-native-maps
+
+-- [**react-native-maps**](https://github.com/react-native-maps/react-native-maps/blob/master/docs/installation.md) --
+
+```sh
+npm install react-native-maps
+
+```
+
+en la carpeta android/app/src/main/AndroidManifest.xml se copia estas lineas, las que se necesita para google maps
+```sh
+   <meta-data
+     android:name="com.google.android.geo.API_KEY"
+     android:value="AIzaSyAxihmCOcLvvKV96-tqBMx40a1VzflN3k0"/>
+```
