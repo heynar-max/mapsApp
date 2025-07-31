@@ -5,7 +5,7 @@ import { Map } from '../../components/maps/Map';
 export const MapScreent = () => {
     return (
         <View style={styles.container}>
-            <Map/>
+            {/* <Map/> */}
         </View>
     )
 }
