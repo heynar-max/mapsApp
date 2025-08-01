@@ -3,6 +3,7 @@ import { Location } from "../../../infrastructure/interfaces/location";
 import { FAB } from "../ui/FAB";
 import { useEffect, useRef, useState } from "react";
 import { useLocationStore } from "../../store/location/useLocationStore";
+import { Platform } from "react-native";
 
 interface Props {
     showsUserLocation?: boolean;
@@ -51,7 +52,7 @@ export const Map = ({showsUserLocation = true, initialLocation}: Props) => {
         <MapView
             ref={mapRef}
             showsUserLocation={showsUserLocation}
-            provider={PROVIDER_GOOGLE} // remove if not using Google Maps
+            provider={Platform.OS === 'ios' ? undefined : PROVIDER_GOOGLE} // remove if not using Google Maps
             style={{flex:1}}
             onTouchStart={() => setIsFollowingUser(false)}
             region={{
@@ -101,3 +102,4 @@ export const Map = ({showsUserLocation = true, initialLocation}: Props) => {
         </>
     );
 };
+
